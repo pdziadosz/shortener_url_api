@@ -4,7 +4,7 @@ from django.db import IntegrityError, models, transaction
 from .utils import generate_unique_code_from_id
 
 SHORT_CODE_LENGTH = 8
-MAX_GENERATION_ATTEMPTS = 5
+MAX_GENERATION_ATTEMPTS = 100
 
 
 class ShortURL(models.Model):
